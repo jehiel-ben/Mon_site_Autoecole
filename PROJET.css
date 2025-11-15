@@ -19,7 +19,6 @@ body {
 }
 .logo{
     display: flex;
-    
     height: 100px;
     object-fit: cover;width: 100px;
     margin-left: 20px;
@@ -594,8 +593,6 @@ body {
     font-size: 30px;
     margin-left: 150px;
     margin-bottom: 2px;
-    
-
 }
 .form-carte h2:hover{
     margin-top: 1px;
@@ -609,12 +606,13 @@ body {
     background-color: #6d6379;
 }
 .form-group{
-    margin: 10px 0;
+    margin: 8px 0;
     width: 100px;
 }
 .form-group input {
-    width: 211px;
-    padding: 8px;
+    height: 20px;
+    width: 218px;
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background:#c2f0ae;
@@ -629,12 +627,12 @@ body {
 }
 .form-group select{
     width: 230px;
-    padding: 8px;
-    height: 35px;
+    padding: 5px;
+    height: 33px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background:#b7da95;
-    color: #0805af;  
+    color: #020135;  
 }
 
 .forgot-password{
@@ -665,15 +663,15 @@ body {
     left: 140%;
     right: 10px;
     bottom: 10px;
-    box-shadow:0 4px 8px rgba(230, 166, 166, 0.2) ;
+    box-shadow:0 4px 8px rgba(122, 87, 87, 0.2) ;
 }
 button{
-    margin-top: 10px;
+    margin-top: 5px;
     margin-right: 1px;
     margin-left: 150px;
     font-size: 15px;
-    width: 100%;
-    padding: 8px;
+    width: 80%;
+    padding: 5px;
     background-color: #09220a;
     color: white;
     border: none;
@@ -724,16 +722,20 @@ button:hover{
 
 /* -------------------------@@@@@@@@@@@@@@@@@@@@@@@@--------------------- */
 /* --------------------------SERVICES-----SERVICES--------------------------- */
-
+.main{
+    background-image: url('images/bugatti.jpg');
+    background-size: contain;
+}
 .main h2{
     margin-top: 20px;
     font-family: 'Times New Roman', Times, serif;
     justify-content: center;
+    font-style: italic;
     font-size: 35px;
     align-items: center;
     text-align: center;
-    height: 20%;
-    background:linear-gradient(145deg, #e7e7de, #e7fbff);
+    height: 50px;
+    background:linear-gradient(145deg, #e7e7de, #f1f7f8);
 }
 .main p{
     justify-content: center;
@@ -742,8 +744,6 @@ button:hover{
     text-align: center;
     margin: 30px;
 }
-
-
 .containe{
     margin-bottom: 30px;
     margin-top: 30px;
@@ -753,7 +753,6 @@ button:hover{
     height: 505px;
     display: grid; 
     grid-template-columns: repeat(3, 1fr);
-   
 }
 .service{
     background-color: #fff;
@@ -871,14 +870,14 @@ button:hover{
     font-size: 25px;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: #e9a107;
+    color: #90fafd;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px;
 } 
 .service-container p{
-    color: #080000f1;
+    color: #fffffff1;
     font-size:large;
     text-align: justify;
     justify-content: center;
@@ -888,13 +887,15 @@ button:hover{
     margin-right: 20px;
     margin-bottom: 10px;
 }
+.service-container img{
+    border-radius:  200px 10px;
+}
 .service-container img:hover{
     opacity: 9rem;
     transform: scale(1.09);
-    transition: all 1.5s ease;   
+    transition: all 3.5s ease;   
 }
 .prem-contact{
-    background: #f7fbfc79;
     margin-top: 20px;
     height: 100px;
     margin-bottom:5%;
@@ -903,9 +904,11 @@ button:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 30px;
+    font-size: x-large;
+    margin-right: -400px;
 }
 .contact-prem h5{
+    color: #000;
     font-size: 20px;
     justify-content: center;
     align-items: center;
@@ -913,6 +916,7 @@ button:hover{
 }
 
 .contact-prem {
+    /* background: rgb(240, 236, 236); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -920,15 +924,86 @@ button:hover{
     margin-top: -90px;
 }
 .contact-prem>div img{
-   
     border-radius: 50px 160px;
-    box-shadow: 0 0 50px rgba(94, 89, 89, 0.8); 
+    box-shadow: 0 0 50px rgba(185, 182, 182, 0.8); 
 }
 .contact-prem img:hover{
     opacity: 9rem;
     transform: scale(1.09);
     transition: 0.9s ease;
 }
+/* =============================partie co-services das la page srvices================================================ */
+.co-service{
+    width: 100%;
+    max-width: 700px;
+    background: 0 0 10px rgba(236, 207, 207, 0.1);
+    margin-left: 70px;
+    margin-top: 20px;  
+}
+.co-service h3{
+   margin: 20px;
+   font-size: x-large; 
+}
+.co-service th{
+    border: 2px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+.co-service table td{
+    border: 2px solid #000;
+    align-items: center;
+    text-align: justify;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+
+/* ------------------Partie horaire des services */
+.container-section{
+    width: 100%;
+    max-width: 500px;
+    background: 0 0 10px rgba(236, 207, 207, 0.1);
+    margin-left: 70px;
+    color: white;
+}
+.container-section h3{
+    text-align: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #fffefe;
+}
+table{
+    width: 100%;
+    /* border-collapse: collapse;  prermet de ne coller le tables entre eux; 
+    une fois eliminer les colonnes de la table se  separent */
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.container-section th, td{
+    border: 2px solid #fdfcfc;
+    padding: 5px;
+    text-align: center;
+    border-collapse: collapse;
+}
+.manuscrit{
+    font-style: italic;
+}
+.container-section .note{
+    font-style: italic;
+    font-size: large;
+    margin-top: 0.5px;
+    margin-left:1px;
+    text-align: center;
+}
+
+/* ========================derniere partie dans service ===================================== */
 .tempora{
     justify-content: center;
     margin-top: 20px;
@@ -948,7 +1023,7 @@ button:hover{
 .tempora h5{
     font-size: 20px;
     align-items: center;
-    justify-content: ce;
+    justify-content: center;
     text-align: center;
     text-decoration: solid;
     margin:20px;
@@ -970,12 +1045,20 @@ button:hover{
 
 .footer-content{
     overflow: hidden;
-
     display: grid;
     grid-template-columns: 50% 1fr;
-    height: 120px;
+    height: 150px;
     background:linear-gradient(145deg, #3c5155, #885d5d);
     padding: 10px;
+}
+.mat li{
+      font-style: italic;
+    font-size: 13px;
+    list-style: none;
+    margin-left: 200px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 .lettre{
     font-size: 15px;
@@ -1027,6 +1110,7 @@ button:hover{
 }
 .footer-link li a{
     text-decoration: none;
+    color: #0805af;
 }
 
 
